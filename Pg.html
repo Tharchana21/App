@@ -1,0 +1,377 @@
+<!Doctype html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Maps&family=Square+Peg&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Rubik+Maps&family=Square+Peg&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=Rubik+Maps&family=Square+Peg&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=Rubik+Maps&family=Square+Peg&display=swap" rel="stylesheet">
+
+
+<style>
+
+#bg{
+background-image:url('PG_PIC.jpg');
+background-attachment:fixed;
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
+
+.ba{
+position:fixed; 
+bottom:50px;
+left:65px;
+font-family: "Kalam", cursive;
+font-weight: 400;
+font-style: normal;
+}
+
+.a{
+border-radius:50px;
+position: fixed; 
+bottom: 5px;
+cursor:pointer;
+border-width:0;
+background-color:white;
+}
+
+.b{
+border-radius:50px;
+border-outline:none;
+}
+
+h1,pre{
+margin:5px;
+color:white;
+}
+
+.square-peg-regular {
+font-family: "Square Peg", cursive;
+font-weight:1000;
+font-style: normal;
+font-size:100px;
+color:white;
+}
+
+.square-peg-regula {
+font-family: "Square Peg", cursive;
+font-weight:1000;
+font-style: normal;
+font-size:100px;
+color:white;
+}
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oo{
+height:620px;
+width:390px;
+position:absolute;
+top:13px;
+right:80px;
+border-radius:10px;
+text-align:center;
+backdrop-filter: blur(10px);
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+table{
+color:white;
+padding:3px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.oswald_login {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+ 
+}
+
+.josefin-sans-letter {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.txt{
+border-radius:0px 8px 8px 0px;
+border: none;
+padding:0px 0px 2px 4px;
+outline: none;
+height:30px;
+width:250px;
+font-size:15px;
+box-sizing: border-box;
+vertical-align: middle;
+}
+
+.ig{
+border-radius:8px 0px 0px 8px;
+padding:5px;
+background-color:white;
+border: none;
+height:20px;
+width:20px;
+vertical-align: middle;
+}
+
+.txtx{
+border-radius:0px 0px 0px 0px;
+width:220px;
+}
+
+.but{
+padding:0;
+border-outline:none;
+outline:none;
+border: none;
+border-radius:0px 8px 8px 0px;
+cursor:pointer;
+}
+
+.yyy{
+border-radius:0px 8px 8px 0px;
+}
+
+.check{
+margin:8px 0px 0px 0px;
+}
+
+.hhh{
+background-color:white;
+border-outline:none;
+outline:none;
+border: none;
+cursor:pointer;
+padding:0px 10px 0px 10px;
+border-radius:50px;
+}
+
+.uy{
+margin:0;
+padding:4px 8px;
+}
+
+.hhh:hover{
+color:white;
+background-color:black;
+transition:0.7s;
+}
+
+</style>
+
+<script>
+
+var light=0;
+function my(){
+
+if(light%2==0){
+document.getElementById("bg").style.backgroundImage="url(PG_PIC1.jpg)";
+document.getElementById("bb").src="DARK.jpg";
+document.getElementById("bg").style.transition="2s";
+document.getElementById("hs").style.backgroundColor="black";
+document.querySelector('.square-peg-regular').style.color = 'black';
+document.querySelector('.kalam-regular').style.color = 'black';
+document.querySelector('.hhh').style.backgroundColor = 'black';
+document.querySelector('.hhh').style.color = 'white';
+document.querySelector('.xyx').style.color = 'black';
+document.querySelector('.ba').style.color = 'black';
+document.querySelector('.tt').style.color = 'black';
+document.querySelector('.uu').style.color = 'white';
+document.querySelector('.ut').style.color = 'white';
+
+document.querySelector('.tp').style.color = 'black';
+document.querySelector('.ti').style.color = 'black';
+document.querySelector('.tf').style.color = 'black';
+document.querySelector('.tk').style.color = 'black';
+
+document.querySelector('.tp').style.transition="2s";
+document.querySelector('.uu').style.transition="2s";
+document.querySelector('.ut').style.transition="2s";
+document.querySelector('.ti').style.transition="2s";
+document.querySelector('.tf').style.transition="2s";
+document.querySelector('.tk').style.transition="2s";
+document.querySelector('.hhh').style.transition="2s";
+document.querySelector('.xyx').style.transition="2s";
+
+document.querySelector('.square-peg-regular').style.transition="2s";
+document.querySelector('.tt').style.transition="2s";
+document.querySelector('.kalam-regular').style.transition="2s";
+document.querySelector('.ba').style.transition="2s";
+
+document.querySelector('.hhh').addEventListener('click', ff);
+
+
+document.querySelector('.hhh').addEventListener('mouseenter', function() {
+    this.style.backgroundColor = 'white';
+    this.style.color = 'black';
+    this.style.transition = '0.7s';
+});
+
+document.querySelector('.hhh').addEventListener('mouseleave', function() {
+    this.style.backgroundColor = 'black';
+    this.style.color = 'white';
+    this.style.transition = '0.7s';
+});
+
+
+document.querySelector(".ut").href="WHITE1.html";
+document.querySelector(".hhh").onclick="location.href='WHITE.html'";
+
+}
+
+else{
+document.getElementById("bg").style.backgroundImage="url(PG_PIC.jpg)";
+document.getElementById("bb").src="BRIGHT.jpg";
+document.getElementById("bg").style.transition="2s";
+document.getElementById("hs").style.backgroundColor="white";
+document.querySelector('.square-peg-regular').style.color = 'white';
+document.querySelector('.kalam-regular').style.color = 'white';
+document.querySelector('.hhh').style.backgroundColor = 'white';
+document.querySelector('.ba').style.color = 'white';
+document.querySelector('.xyx').style.color = 'white';
+document.querySelector('.tt').style.color = 'white';
+document.querySelector('.uu').style.color = 'black';
+document.querySelector('.ut').style.color = 'black';
+document.querySelector('.hhh').style.color = 'black';
+
+document.querySelector('.tp').style.color = 'white';
+document.querySelector('.ti').style.color = 'white';
+document.querySelector('.tf').style.color = 'white';
+document.querySelector('.tk').style.color = 'white';
+
+document.querySelector('.tp').style.transition="2s";
+document.querySelector('.uu').style.transition="2s";
+document.querySelector('.ut').style.transition="2s";
+document.querySelector('.ti').style.transition="2s";
+document.querySelector('.tf').style.transition="2s";
+document.querySelector('.tk').style.transition="2s";
+document.querySelector('.hhh').style.transition="2s";
+document.querySelector('.xyx').style.transition="2s";
+
+document.querySelector('.square-peg-regular').style.transition="2s";
+document.querySelector('.kalam-regular').style.transition="2s";
+document.querySelector('.tt').style.transition="2s";
+document.querySelector('.ba').style.transition="2s";
+
+document.querySelector('.hhh').addEventListener('mouseenter', function() {
+    this.style.backgroundColor = 'black';
+    this.style.color = 'white';
+    this.style.transition = '0.7s';
+});
+
+document.querySelector('.hhh').addEventListener('mouseleave', function() {
+    this.style.backgroundColor = 'white';
+    this.style.color = 'black';
+    this.style.transition = '0.7s';
+});
+
+document.querySelector(".ut").href="DARK1.html";
+document.querySelector(".hhh").onclick="location.href='DARK.html'";
+
+document.querySelector('.hhh').addEventListener('click', ff);
+
+}
+light=light+1;
+}
+
+var z=0;
+function my1(){
+if(z%2==0){
+document.getElementById("ee").src="eyeclose.jpg";
+document.getElementById("jj").type="text";
+}
+else{
+document.getElementById("ee").src="eyeopen.jpg";
+document.getElementById("jj").type="password";
+}
+z=z+1;
+}
+
+
+function ff(){
+var a = document.querySelector('input[type="email"]').value;
+var b = document.querySelector('input[type="password"]').value;
+
+if (!validateEmail(a)) {
+alert("Please enter a valid email address.");
+return false;
+}
+
+if (a === "" || b === "") {
+alert("Please fill out both the email and password fields.");
+return false;
+}
+
+
+if(light%2==0){
+window.location.href = 'DARK.html';
+}
+else{
+window.location.href = 'WHITE.html';
+}
+
+function validateEmail(a) {
+var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+return emailPattern.test(a);
+}
+
+}
+
+
+</script>
+
+</head>
+
+<body id="bg">
+<div class="oo">
+<div style="opacity:1.0;">
+
+<p class="square-peg-regula tt" style="font-size:40px;margin:10px;">Find My Nest</p>
+
+<form>
+<table >
+
+<tr><td class="oswald_login tp" style="font-size:45px;text-align:center;">Login</td></tr>
+<tr><td><p class="josefin-sans-letter ti">Don't have an account?<a class="josefin-sans-letter uu" href="https://www.google.com/" style="color:black;">Create an account</a></p></td></tr>
+<tr><td align="left" class="josefin-sans-letter tf" >Email Address</td></tr>
+<tr><td align="left"><img class="ig" src="Email.png"><input class="txt" type="email" required></td></tr>
+<tr><td><br></td></tr>
+<tr><td align="left" class="josefin-sans-letter tk">Password</td></tr>
+<tr><td align="left"><img class="ig" src="Key.png"><input class="txt txtx" type="password" id="jj" required><button type="button" class="but" onclick="my1()"><img src="eyeopen.jpg" class="ig yyy" id="ee"></button></td></tr>
+<tr><td ><input type="checkbox" style="float:left;" class="check"><p class="josefin-sans-letter xyx" style="float:left;padding:7px 0px 0px 6px;margin:0;">Remember me</p><p style="float:right;padding:8px 17px 0px 0px;margin:0;"><a class="josefin-sans-letter ut" style="color:black;" href="DARK1.html" target="_blank">Forget password?</a></p></td></tr>
+<tr><td><br></td></tr>
+<tr><td><button class="hhh" onclick="ff()" type="button"><p class="oswald_login uy" style="font-size:20px;" >Take me</p></button></td></tr>
+
+</table>
+</form>
+
+</div>
+</div>
+
+<h1 class="square-peg-regular">Find My Nest</h1>
+<pre class="kalam-regular">Find your perfect Nest, Where comfort meets convinience 
+Just like more than Home!</pre>
+<pre class="ba" ><span style="font-size:50px;">WELCOME</span> to find my nest 
+let we choose best PG for you :)</pre>
+<button class="a" id="hs" onclick="my()"><img class="b" id="bb" src="BRIGHT.jpg" height="40" width="40"></button>
+
+
+
+</body>
+
+</html> 

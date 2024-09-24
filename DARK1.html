@@ -1,0 +1,118 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Square+Peg&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Square+Peg&display=swap" rel="stylesheet">
+
+<style>
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+font-size:20px;
+}
+table
+{
+border-collapse:collapse;
+margin:auto;
+margin-top:30px;
+float:left;
+margin-left:30px;
+position:absolute;
+
+}
+body
+{
+background-image:url('PG_PIC.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+
+}
+div
+{
+right:500px;
+height:300px;
+width:390px;
+position:absolute;
+top:83px;
+border-radius:10px;
+text-align:center;
+backdrop-filter: blur(10px);
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+font-weight:5px;
+color:white;
+
+}
+tr,td{
+padding:5px;
+font-size:30px;
+color:white;
+
+
+}
+.but{
+border-radius:5px;
+height:32px;
+width:300px;
+border:none;
+border-outline:none;
+outline:none;
+}
+.bu
+{
+border-radius:15px;
+height:32px;
+width:70px;
+border:none;
+border-outline:none;
+outline:none;
+}
+.bu:hover{
+background-color:black;
+color:white;
+transition:0.7s;
+}
+</style>
+<script>
+function ff(){
+var a = document.querySelector('input[type="email"]').value;
+
+if (!validateEmail(a)) {
+alert("Please enter a valid email address.");
+return false;
+}
+
+window.location.href = 'DARK2.html';
+
+function validateEmail(a) {
+var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+return emailPattern.test(a);
+}
+
+}
+</script>
+</head>
+<body>
+<div align="center">
+<table align="center">
+<tr><td class="oswald" >Enter your Email</td></tr>
+<tr><td class="josefin-sans">Email</td></tr>
+<tr><td><input type="email" class="but" required></td></tr>
+<tr style="width:200px"><td align="center"><button class="bu oswald" onclick="ff()" >Submit</button></td></tr>
+</table>
+</div>
+</body>
+</html>
